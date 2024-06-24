@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MaxApp1</string>
+    <string name="left_arrow">left arrow</string>
+    <string name="right_arrow">right arrow</string>
+    <string name="toast_and_vibrate">Toast And Vibrate</string>
+</resources>
