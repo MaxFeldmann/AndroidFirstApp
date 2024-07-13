@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:text="@string/str_BTN_start"
             android:gravity="center"
-            android:textSize="30sp"
+            android:textSize="@dimen/menu_BTN_textsize"
             android:textStyle="bold"
             android:layout_margin="@dimen/default_margin"/>
         <com.google.android.material.button.MaterialButton
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/menu_sensor_str"
-            android:textSize="30sp"
+            android:textSize="@dimen/menu_BTN_textsize"
             android:gravity="center"
             android:textStyle="bold|italic"
             android:layout_margin="@dimen/default_margin"/>

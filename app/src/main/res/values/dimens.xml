@@ -11,4 +11,5 @@
     <dimen name="placement_text_size">16sp</dimen>
     <dimen name="data_elevation">8dp</dimen>
     <dimen name="poster_corner_radius">20dp</dimen>
+    <dimen name="menu_BTN_textsize">25sp</dimen>
 </resources>
