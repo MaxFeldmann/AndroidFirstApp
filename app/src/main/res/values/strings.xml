@@ -3,4 +3,13 @@
     <string name="left_arrow">left arrow</string>
     <string name="right_arrow">right arrow</string>
     <string name="toast_and_vibrate">Toast And Vibrate</string>
+    <string name="switch_str">Fast mode</string>
+    <string name="str_BTN_score">Highscores</string>
+    <string name="str_BTN_start">Start</string>
+    <string name="menu_sensor_str">Sensor Mode</string>
+    <string name="str_SWT_off">Slow</string>
+    <string name="str_SWT_on">Fast</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_BTN_highscore">Back To Main Menu</string>
 </resources>

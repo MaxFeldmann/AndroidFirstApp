@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_launcher_background_space"
     tools:context=".MainActivity">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:textColor="@color/yellow"
+        android:elevation="1dp"
+        android:textSize="@dimen/score_text_size"
+        android:textStyle="bold"
+        tools:text="000" />
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linear_row_0"
         android:layout_width="match_parent"
@@ -20,36 +33,110 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_0.0"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_0.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar0.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/asteroid_0.1"
-            android:layout_width="@dimen/icon_size"
-            android:layout_height="@dimen/icon_size"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_0.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar0.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_0.2"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_0.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar0.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_0.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar0.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_0.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar0.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -66,33 +153,110 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_1.0"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_1.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar1.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_1.1"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_1.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar1.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_1.2"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_1.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar1.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_1.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar1.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_1.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar1.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -109,33 +273,110 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_2.0"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_2.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar2.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_2.1"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_2.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar2.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_2.2"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_2.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar2.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_2.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar2.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_2.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar2.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -152,33 +393,110 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_3.0"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_3.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar3.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_3.1"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_3.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar3.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/asteroid_3.2"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
-                app:srcCompat="@drawable/asteroid"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_3.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar3.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_3.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar3.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_3.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar3.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -188,6 +506,366 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/linear_row_3"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginHorizontal="@dimen/default_margin">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_4.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar4.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_4.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar4.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_4.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar4.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_4.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar4.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_4.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar4.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_row_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_row_4"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginHorizontal="@dimen/default_margin">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_5.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar5.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_5.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar5.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_5.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar5.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_5.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar5.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_5.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar5.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_row_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_row_5"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginHorizontal="@dimen/default_margin">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_6.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar6.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_6.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar6.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_6.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar6.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_6.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar6.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_6.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    app:srcCompat="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar6.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_row_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_row_6"
         android:layout_marginTop="@dimen/default_margin"
         android:layout_marginBottom="@dimen/default_margin"
         android:layout_marginHorizontal="@dimen/default_margin">
@@ -202,16 +880,21 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/space_ship_4.0"
+                    android:id="@+id/space_ship_7.0"
                     android:orientation="vertical"
-                    android:layout_width="@dimen/icon_size"
-                    android:layout_height="@dimen/icon_size"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
                     android:src="@drawable/space_ship"/>
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/asteroid_4.0"
-                    android:layout_width="@dimen/icon_size"
-                    android:layout_height="@dimen/icon_size"
-                    android:src="@drawable/asteroid"/>
+                    android:id="@+id/alien_7.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar7.0"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
             </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -225,16 +908,21 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/space_ship_4.1"
+                    android:id="@+id/space_ship_7.1"
                     android:orientation="vertical"
-                    android:layout_width="@dimen/icon_size"
-                    android:layout_height="@dimen/icon_size"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
                     android:src="@drawable/space_ship"/>
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/asteroid_4.1"
-                    android:layout_width="@dimen/icon_size"
-                    android:layout_height="@dimen/icon_size"
-                    android:src="@drawable/asteroid"/>
+                    android:id="@+id/alien_7.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar7.1"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
             </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -248,16 +936,77 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/space_ship_4.2"
+                    android:id="@+id/space_ship_7.2"
                     android:orientation="vertical"
-                    android:layout_width="@dimen/icon_size"
-                    android:layout_height="@dimen/icon_size"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
                     android:src="@drawable/space_ship"/>
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/asteroid_4.2"
-                    android:layout_width="@dimen/icon_size"
-                    android:layout_height="@dimen/icon_size"
-                    android:src="@drawable/asteroid"/>
+                    android:id="@+id/alien_7.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar7.2"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/space_ship_7.3"
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/space_ship"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_7.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar7.3"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/space_ship_7.4"
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/space_ship"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/alien_7.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/alien"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/metal_bar7.4"
+                    android:layout_width="@dimen/icon_size_width"
+                    android:layout_height="@dimen/icon_size_height"
+                    android:src="@drawable/metal_bar"/>
             </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
